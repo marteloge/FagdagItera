@@ -4,7 +4,7 @@ jdk:
 deploy:
   provider: heroku
   api_key:
-    secure: Nbg11pUhJPjRf4rxw1wBMiTm7LnT+5ZCH6baNNXsdzne8R9Q6cHu2fqfWBq/4B799HJw8onGh0bhwtiwXgUhxpggwOn7354J+QB//8RTYlFoGVl6Z/XwSMaMxrf8vUOFXG7ckReVeS6MOe5x1SPCIWHOEjPZteZlGl/+XFHANfA=
-  app: web-hello-world
+    secure: VVnueL3OnIHtolmiyVicZaQrULI2aFqozJrQIgOSV9eZ98EUXo3wLF8DWNnw2IH1hE5YmdaeQidFMtKJ9Uz4c/kxaZO1451s3vlzzP9yvsPzZqD0vWidnTjZHxdddCrp9ZjOiaD/EkIwfsaTWtRDawoqNONDuRXeEIugFkuC1r0=
+  app: FagdagItera
   on:
-    repo: chrissearle/web-hello-world
+    repo: marteloge/FagdagItera
