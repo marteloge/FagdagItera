@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.net.*;
+import java.util.Scanner;
 
 public class HelloWorld extends HttpServlet {
     @Override
@@ -17,11 +18,18 @@ public class HelloWorld extends HttpServlet {
             throws ServletException, IOException {
         int income = Integer.parseInt(req.getParameter("income"));
 
-        String url = "https://cfs-ws-itera.cicero.no/cfp/6/ws/rest/pension/calculateExpectedPension?_jsonp=calculateExpectedPension_0&pensionInput=";
-        String json =   getJSONPayload(50000);
+        String url = "https://cfs-ws-itera.cicero.no/cfp/6/ws/rest/pension/calculateExpectedPension?calculateExpectedPension_0&pensionInput=";
+        String json =   getJSONPayload(income);
+
 
         String reply = executeGet(url+json);
-        resp.getWriter().print(reply);
+
+        int index = reply.indexOf("\"sum\":");
+        int stop = reply.indexOf(",", index) - 1;
+        String number =           reply.substring(index + "sum:".length() + 2, stop);
+        double sum = Double.parseDouble(number);
+        System.out.println(reply);
+        resp.getWriter().print(sum);
     }
 
     private static String getJSONPayload(int income) {
