@@ -5,44 +5,61 @@
         <script type="text/javascript" src="assets/jquery/jquery-2.1.0.js"></script>
         <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
         <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/cover.css" rel="stylesheet">
     </head>
+<body>
 
-    <body>
-        <p>Hello world!</p>
+<div class="site-wrapper">
+    <div class="site-wrapper-inner">
+        <div class="cover-container">
+            <div class="inner cover">
+                <h1 class="cover-heading">Pensjonskalkulator</h1>
+                <p class="lead">Klag til sjefen om du ikke er for&oslash;yd med pensjonen du kommer til &aring; f&aring;.</p>
+                <div class="row" id="controllers">
+                    <div class="span4">
+                        <input id="current_age" class="string" type="text">
+                    </div>
 
-        <div class="row" id="controllers">
-            <div class="span4">
-                <input id="current_age" class="string" type="text">
-            </div>
+                    <div class="span4">
+                        <input id="pension_age" class="string" type="text">
+                    </div>
 
-            <div class="span4">
-                <input id="pension_age" class="string" type="text">
-            </div>
+                    <div class="span4">
+                        <input id="working_age" class="string" type="text">
+                    </div>
 
-            <div class="span4">
-                <input id="working_age" class="string" type="text">
-            </div>
+                    <div class="span4">
+                        <input id="salary" class="string" type="text">
+                    </div>
 
-            <div class="span4">
-                <input id="salary" class="string" type="text">
-            </div>
+                    <div class="span5">
 
-            <div class="span5">
+                        <div class="radio">
+                            <label><input name="employer" type="radio" value="employee-1"> Offentlig</label>
+                        </div>
+                        <div class="radio">
+                            <label><input name="employer" type="radio" value="employee-2">Privat</label>
+                        </div>
+                        <div class="radio">
+                            <label><input name="employer" type="radio" value="employee-3">Selvstendig</label>
+                        </div>
 
-                <div class="radio">
-                    <label><input name="employer" type="radio" value="employee-1"> Offentlig</label>
+                        <div class="span4">
+                            <input id="occupationalPension" class="string" type="text">
+                        </div>
+
+                    </div>
                 </div>
-                <div class="radio">
-                    <label><input name="employer" type="radio" value="employee-2">Privat</label>
-                </div>
-                <div class="radio">
-                    <label><input name="employer" type="radio" value="employee-3">Selvstendig</label>
-                </div>
-
-            <div class="span4">
-                <input id="occupationalPension" class="string" type="text">
             </div>
+            <div class="mastfoot">
+                <div class="inner">
+                    <p>Team leet</p>
 
+                </div>
+            </div>
         </div>
-    </body>
+    </div>
+</div>
+
+</body>
 </html>
