@@ -26,7 +26,7 @@ $(function () {
             service_pension: $('#service_pension').val()
         }).done(function (data) {
             console.log(data);
-            $('form').after('<div id="results" class="alert alert-success">Forventet årlig pensjon er ' + data + '.</div>');
+            $('form').after('<div id="results" class="alert alert-success">Forventet årlig pensjon er <strong>' + data + '</strong>.</div>');
         }).fail(function () {
             $('form').after('<div id="results" class="alert alert-danger">En feil forekom!</div>');
         });
