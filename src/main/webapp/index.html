@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pensjonskalkulator</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="assets/jquery/jquery-2.1.0.js"></script>
+        <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/application.js"></script>
+        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/cover.css" rel="stylesheet">
+    </head>
+<body>
+
+<div class="site-wrapper">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 ">
+            <h1 class="cover-heading text-center">Pensjonskalkulator</h1>
+
+            <p class="lead text-center">Klag til sjefen om du ikke er for&oslash;yd med pensjonen du kommer til &aring;
+                f&aring;.</p>
+
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-4 ">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="current_age">Alder</label>
+                            <input id="current_age" class="form-control" type="text">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pension_age">Pensjonsalder</label>
+                            <input id="pension_age" class="form-control" type="text">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="working_age">N&aring;r startet du &aring; jobbe?</label>
+                            <input id="working_age" class="form-control" type="text">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="salary">Hva tjener du i dag?</label>
+                            <input id="salary" class="form-control" type="text">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service_pension">Tjenestepensjon?</label>
+                            <input id="service_pension" class="form-control" type="text">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="radio">
+                                <label><input name="employer" type="radio" value="employee-1"> Offentlig</label>
+                            </div>
+                            <div class="radio">
+                                <label><input name="employer" type="radio" value="employee-2">Privat</label>
+                            </div>
+                            <div class="radio">
+                                <label><input name="employer" type="radio" value="employee-3">Selvstendig</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

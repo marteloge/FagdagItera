@@ -1,4 +1,4 @@
-Fagdag Itera, team l33t [![Build Status](https://travis-ci.org/marteloge/FagdagItera.png?branch=master)](https://travis-ci.org/marteloge/FagdagItera)
+Fagdag Itera, team leet [![Build Status](https://travis-ci.org/marteloge/FagdagItera.png?branch=master)](https://travis-ci.org/marteloge/FagdagItera)
 =======================
 
 To run the project, run the following commands.
