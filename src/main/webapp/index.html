@@ -11,51 +11,53 @@
 <body>
 
 <div class="site-wrapper">
-    <div class="site-wrapper-inner">
-        <div class="cover-container">
-            <div class="inner cover">
-                <h1 class="cover-heading">Pensjonskalkulator</h1>
-                <p class="lead">Klag til sjefen om du ikke er for&oslash;yd med pensjonen du kommer til &aring; f&aring;.</p>
-                <div class="row" id="controllers">
-                    <div class="span4">
-                        <input id="current_age" class="string" type="text">
-                    </div>
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 ">
+            <h1 class="cover-heading text-center">Pensjonskalkulator</h1>
 
-                    <div class="span4">
-                        <input id="pension_age" class="string" type="text">
-                    </div>
+            <p class="lead text-center">Klag til sjefen om du ikke er for&oslash;yd med pensjonen du kommer til &aring;
+                f&aring;.</p>
 
-                    <div class="span4">
-                        <input id="working_age" class="string" type="text">
-                    </div>
-
-                    <div class="span4">
-                        <input id="salary" class="string" type="text">
-                    </div>
-
-                    <div class="span5">
-
-                        <div class="radio">
-                            <label><input name="employer" type="radio" value="employee-1"> Offentlig</label>
-                        </div>
-                        <div class="radio">
-                            <label><input name="employer" type="radio" value="employee-2">Privat</label>
-                        </div>
-                        <div class="radio">
-                            <label><input name="employer" type="radio" value="employee-3">Selvstendig</label>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-4 ">
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="current_age">Alder</label>
+                            <input id="current_age" class="form-control" type="text">
                         </div>
 
-                        <div class="span4">
-                            <input id="occupationalPension" class="string" type="text">
+                        <div class="form-group">
+                            <label for="pension_age">Pensjonsalder</label>
+                            <input id="pension_age" class="form-control" type="text">
                         </div>
 
-                    </div>
-                </div>
-            </div>
-            <div class="mastfoot">
-                <div class="inner">
-                    <p>Team leet</p>
+                        <div class="form-group">
+                            <label for="working_age">N&aring;r startet du &aring; jobbe?</label>
+                            <input id="working_age" class="form-control" type="text">
+                        </div>
 
+                        <div class="form-group">
+                            <label for="salary">Hva tjener du i dag?</label>
+                            <input id="salary" class="form-control" type="text">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="occupationalPension">Tjenestepensjon?</label>
+                            <input id="occupationalPension" class="form-control" type="text">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="radio">
+                                <label><input name="employer" type="radio" value="employee-1"> Offentlig</label>
+                            </div>
+                            <div class="radio">
+                                <label><input name="employer" type="radio" value="employee-2">Privat</label>
+                            </div>
+                            <div class="radio">
+                                <label><input name="employer" type="radio" value="employee-3">Selvstendig</label>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
