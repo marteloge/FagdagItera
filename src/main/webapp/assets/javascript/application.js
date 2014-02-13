@@ -2,11 +2,11 @@ $(function () {
     var timer,
         delay = 600;
 
-    $('#current_age')    .bind('input', onChange);
-    $('#pension_age')    .bind('input', onChange);
-    $('#working_age')    .bind('input', onChange);
-    $('#salary')         .bind('input', onChange);
-    $('#employer')       .bind('input', onChange);
+    $('#current_age').bind('input', onChange);
+    $('#pension_age').bind('input', onChange);
+    $('#working_age').bind('input', onChange);
+    $('#salary').bind('input', onChange);
+    $('input[name=employer]').bind('change', onChange);
     $('#service_pension').bind('input', onChange);
 
     function onChange () {
@@ -22,13 +22,13 @@ $(function () {
             pension_age:     $('#pension_age').val(),
             working_age:     $('#working_age').val(),
             salary:          $('#salary').val(),
-            employer:        $('#employer').val(),
+            employer:        $('input[name=employer]').val(),
             service_pension: $('#service_pension').val()
         }).done(function (data) {
             console.log(data);
-            $('#controllers').append('<p id="results" class="btn btn-success">Forventet årlig pensjon er ' + data + '.</p>');
+            $('form').after('<p id="results" class="btn btn-success">Forventet årlig pensjon er ' + data + '.</p>');
         }).fail(function () {
-            $('#controllers').append('<p id="results" class="btn btn-danger">En feil forekom!</p>');
+            $('form').after('<p id="results" class="btn btn-danger">En feil forekom!</p>');
         });
     }
 });
