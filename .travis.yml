@@ -5,6 +5,6 @@ deploy:
   provider: heroku
   api_key:
     secure: VVnueL3OnIHtolmiyVicZaQrULI2aFqozJrQIgOSV9eZ98EUXo3wLF8DWNnw2IH1hE5YmdaeQidFMtKJ9Uz4c/kxaZO1451s3vlzzP9yvsPzZqD0vWidnTjZHxdddCrp9ZjOiaD/EkIwfsaTWtRDawoqNONDuRXeEIugFkuC1r0=
-  app: FagdagItera
+  app: fagdagitera
   on:
     repo: marteloge/FagdagItera
